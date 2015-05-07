@@ -15,14 +15,17 @@ app.service('mainService', function(){
   	this.getData = function()	{
   		return quotes;
   	};
-  	this.addData = function(obj)	{
+  	this.addData = function(inputText, inputAuthor)	{
+        quotes.push({'text': inputText, 'author': inputAuthor});
+  	};
+  	this.removeData = function(inputText)	{
+  	 for (var i = 0; i < quotes.length; i++)  {
+      if (inputText === quotes[i])  {
+        quotes[i].splice;
+      }
+     }
+  	};
 
-  	};
-  	this.removeData = function(str)	{
-  		for (var i = 0; i < quotes.(i).length; i++)	{
-  			if(str )
-  		}
-  	};
 
 
 
