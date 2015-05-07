@@ -20,8 +20,8 @@ app.service('mainService', function(){
   	};
   	this.removeData = function(inputText)	{
   	 for (var i = 0; i < quotes.length; i++)  {
-      if (inputText === quotes[i])  {
-        quotes[i].splice;
+      if (inputText === quotes[i]['text'])  {
+        quotes.splice(i, 1);
       }
      }
   	};
